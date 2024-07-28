@@ -1,0 +1,13 @@
+﻿@model List<string>
+
+<h1>Выберите пользователя</h1>
+
+<form asp-action="Recommend" method="post">
+    <select name="user">
+        @foreach (var user in Model)
+        {
+            <option value="@user">@user</option>
+        }
+    </select>
+    <button type="submit">Получить рекомендации</button>
+</form>

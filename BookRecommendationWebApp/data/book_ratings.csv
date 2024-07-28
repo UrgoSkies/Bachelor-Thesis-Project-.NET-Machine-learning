@@ -1,0 +1,7 @@
+UserId,ISBN,Label,BookTitle
+1,1,10,Book A
+1,2,10,Book B
+2,2,10,Book B
+2,3,10,Book C
+3,4,0,Book D
+3,5,0,Book E

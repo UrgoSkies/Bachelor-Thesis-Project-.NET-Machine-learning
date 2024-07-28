@@ -1,0 +1,257 @@
+﻿{
+  "Scenario": "Recommendation",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "C:\\Users\\Rinald\\Desktop\\testing3.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ",",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "ISBN",
+        "ColumnPurpose": "Item",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "User-ID",
+        "ColumnPurpose": "User",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Book-Rating",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": 0.98790223122965615,
+        "RuntimeInSeconds": 63.591,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4",
+          "e0": {
+            "OutputColumnName": "ISBN",
+            "InputColumnName": "ISBN",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e1": {
+            "OutputColumnName": "User-ID",
+            "InputColumnName": "User-ID",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e2": {
+            "LabelColumnName": "Book-Rating",
+            "MatrixColumnIndexColumnName": "User-ID",
+            "MatrixRowIndexColumnName": "ISBN",
+            "ApproximationRank": 173,
+            "LearningRate": 0.095501651770478715,
+            "NumberOfIterations": 27868,
+            "Quiet": true
+          },
+          "e3": {
+            "OutputColumnName": "User-ID",
+            "InputColumnName": "User-ID"
+          },
+          "e4": {
+            "OutputColumnName": "ISBN",
+            "InputColumnName": "ISBN"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": 0.9877286326221516,
+        "RuntimeInSeconds": 1.103,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4",
+          "e0": {
+            "OutputColumnName": "ISBN",
+            "InputColumnName": "ISBN",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e1": {
+            "OutputColumnName": "User-ID",
+            "InputColumnName": "User-ID",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e2": {
+            "LabelColumnName": "Book-Rating",
+            "MatrixColumnIndexColumnName": "User-ID",
+            "MatrixRowIndexColumnName": "ISBN",
+            "ApproximationRank": 1827,
+            "LearningRate": 0.13678428215328306,
+            "NumberOfIterations": 412,
+            "Quiet": true
+          },
+          "e3": {
+            "OutputColumnName": "User-ID",
+            "InputColumnName": "User-ID"
+          },
+          "e4": {
+            "OutputColumnName": "ISBN",
+            "InputColumnName": "ISBN"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": 0.98760357332198589,
+        "RuntimeInSeconds": 0.451,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4",
+          "e0": {
+            "OutputColumnName": "ISBN",
+            "InputColumnName": "ISBN",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e1": {
+            "OutputColumnName": "User-ID",
+            "InputColumnName": "User-ID",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e2": {
+            "LabelColumnName": "Book-Rating",
+            "MatrixColumnIndexColumnName": "User-ID",
+            "MatrixRowIndexColumnName": "ISBN",
+            "ApproximationRank": 99,
+            "LearningRate": 0.089464489920605267,
+            "NumberOfIterations": 219,
+            "Quiet": true
+          },
+          "e3": {
+            "OutputColumnName": "User-ID",
+            "InputColumnName": "User-ID"
+          },
+          "e4": {
+            "OutputColumnName": "ISBN",
+            "InputColumnName": "ISBN"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": 0.98648009650998036,
+        "RuntimeInSeconds": 0.227,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4",
+          "e0": {
+            "OutputColumnName": "ISBN",
+            "InputColumnName": "ISBN",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e1": {
+            "OutputColumnName": "User-ID",
+            "InputColumnName": "User-ID",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e2": {
+            "LabelColumnName": "Book-Rating",
+            "MatrixColumnIndexColumnName": "User-ID",
+            "MatrixRowIndexColumnName": "ISBN",
+            "ApproximationRank": 10,
+            "LearningRate": 0.058514727209554439,
+            "NumberOfIterations": 116,
+            "Quiet": true
+          },
+          "e3": {
+            "OutputColumnName": "User-ID",
+            "InputColumnName": "User-ID"
+          },
+          "e4": {
+            "OutputColumnName": "ISBN",
+            "InputColumnName": "ISBN"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": 0.98580825392753113,
+        "RuntimeInSeconds": 2.274,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4",
+          "e0": {
+            "OutputColumnName": "ISBN",
+            "InputColumnName": "ISBN",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e1": {
+            "OutputColumnName": "User-ID",
+            "InputColumnName": "User-ID",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e2": {
+            "LabelColumnName": "Book-Rating",
+            "MatrixColumnIndexColumnName": "User-ID",
+            "MatrixRowIndexColumnName": "ISBN",
+            "ApproximationRank": 10,
+            "LearningRate": 0.014230191023006046,
+            "NumberOfIterations": 1234,
+            "Quiet": true
+          },
+          "e3": {
+            "OutputColumnName": "User-ID",
+            "InputColumnName": "User-ID"
+          },
+          "e4": {
+            "OutputColumnName": "ISBN",
+            "InputColumnName": "ISBN"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "MapValueToKey",
+      "e1": "MapValueToKey",
+      "e2": "MatrixFactorization",
+      "e3": "MapKeyToValue",
+      "e4": "MapKeyToValue"
+    },
+    "Schema": "e0 * e1 * e2 * e3 * e4",
+    "MetricName": "RSquared",
+    "ModelFilePath": "C:\\Users\\Rinald\\source\\repos\\mlv1\\mlv1\\MLModel1.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 4,
+  "TrainingOption": {
+    "Version": 1,
+    "Type": "RecommendationTrainingOption",
+    "TrainingTime": 200,
+    "LabelColumn": "Book-Rating",
+    "UserIdColumn": "User-ID",
+    "ItemIdColumn": "ISBN",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "TrainValidateSplitValidationOption",
+      "SplitRatio": 0.2
+    }
+  }
+}
